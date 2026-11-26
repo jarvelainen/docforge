@@ -1,0 +1,13 @@
+{
+  "name": "@docforge/starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Redistributable canonical DocForge project scaffold.",
+  "files": [
+    "project.json",
+    "content/",
+    "assets/",
+    "source-material/",
+    "README.md"
+  ]
+}

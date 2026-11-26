@@ -1,0 +1,25 @@
+{
+  "name": "docforge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Build polished, self-contained offline publications from structured Markdown projects.",
+  "scripts": {
+    "scaffold": "node tools/scaffold-project.mjs",
+    "build": "node packages/engine/build.mjs",
+    "test": "node --test",
+    "test:visual": "node --test tests/visual"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "echarts": "^6.1.0",
+    "marked": "^18.3.0",
+    "mermaid": "^12.3.0",
+    "sanitize-html": "^2.18.2"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+projects/*/output/
+packages/starter/output/
+tests/visual/artifacts/
+**/.DS_Store

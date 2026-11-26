@@ -1,0 +1,17 @@
+{
+  "name": "@docforge/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Redistributable DocForge publication engine package.",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "core/",
+    "layouts/",
+    "templates/",
+    "assets/",
+    "bin/"
+  ]
+}

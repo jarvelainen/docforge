@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{LANG}}" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <style>{{STYLES}}</style>
+</head>
+<body data-layout="{{LAYOUT}}">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="app-header">
+    <div class="header-row">
+      <a class="brand" href="#{{FIRST_SECTION}}" aria-label="{{BRAND}}">{{BRAND_MARK}}<span class="brand-title">{{TITLE}}</span></a>
+      <nav id="navigation" aria-label="Publication navigation">{{NAVIGATION}}</nav>
+    </div>
+    <div class="toolbar">
+      <div class="toolbar-actions">
+        <label class="palette-control"><span class="sr-only">Visual color scheme</span><span class="palette-swatch" aria-hidden="true"></span><select id="chart-palette" aria-label="Visual color scheme"><option value="fujitsu">Fujitsu</option><option value="contrast">Color-safe</option><option value="ocean">Ocean</option></select></label>
+        <label class="search-control"><span class="sr-only">Search publication</span><input id="search" type="search" placeholder="Search publication..." aria-controls="search-results"></label>
+        <button type="button" id="print-button">Print / PDF</button>
+      </div>
+      <div id="search-results" class="search-results" aria-live="polite" hidden></div>
+    </div>
+  </header>
+  <main id="content" class="content" tabindex="-1">
+    <nav class="page-navigator" id="page-navigator" aria-label="Publication pages" hidden>
+      <a class="page-step page-step-previous" id="page-previous" href="#"><span aria-hidden="true">&#8592;</span><span class="page-step-label">Previous</span></a>
+      <span class="page-position" id="page-position" aria-live="polite"></span>
+      <a class="page-step page-step-next" id="page-next" href="#"><span class="page-step-label">Next</span><span aria-hidden="true">&#8594;</span></a>
+    </nav>
+    {{CONTENT}}
+  </main>
+  <script type="application/json" id="document-data">{{DATA}}</script>
+  <script>{{CHART_LIBRARY}}</script>
+  <script>{{DIAGRAM_LIBRARY}}</script>
+  <script>{{SCRIPT}}</script>
+</body>
+</html>
