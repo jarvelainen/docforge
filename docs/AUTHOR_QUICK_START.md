@@ -4,7 +4,7 @@
 
 - Visual Studio Code
 - GitHub Copilot enabled for VS Code
-- Node.js 22 or later
+- Node.js 24 LTS
 - The DocForge repository opened as the VS Code workspace
 
 ## Starting a New Publication

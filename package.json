@@ -11,7 +11,7 @@
     "test:visual": "node --test tests/visual"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=24 <25"
   },
   "dependencies": {
     "echarts": "^6.1.0",
